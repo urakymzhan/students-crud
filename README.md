@@ -34,6 +34,10 @@
     }
 ```
 
-## Feedbacks
+## References
+- [Express Middlewares](https://skyzone.gitbook.io/nodejs-topics/)
+- [Morgan Middleware](https://github.com/expressjs/morgan)
+- [Method Override](https://www.npmjs.com/package/method-override)
+## Feedback
 
 - For any feedbacks/suggestions, send a slack message to instructor!
