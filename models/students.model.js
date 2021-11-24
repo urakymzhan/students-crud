@@ -1,5 +1,5 @@
 let students = require('../db/students');
-let helper = require('../helpers/helper');
+let helper = require('../utils/helper');
 
 // Get all students
 function getStudents() {

@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+// const mdw = require('../middlewares/middlewares');
 const studentsModel = require('../models/students.model');
 
 /**
@@ -39,6 +40,7 @@ router.get('/:id', async (req, res) => {
    * Render 'students' tempalte with single student
    * Use 'studentsModel.getStudent(id)' function from models folder
    * Catch errors
+   * Implement middleware if possible
    */
 });
 
@@ -74,6 +76,7 @@ router.put('/edit/:id', async (req, res) => {
    * Don't forget to use 'req.body' to retrieve a data
    * Use 'studentsModel.updateStudent(id, req.body)' function from models folder
    * Catch errors
+   * Implement middleware if possible
    */
 });
 /**
@@ -86,6 +89,7 @@ router.delete('/delete/:id', async (req, res) => {
    * Don't forget to use 'req.body' to retrieve a data
    * Use 'studentsModel.deleteStudent(id)' function from models folder
    * Catch errors
+   * Implement middleware if possible
    */
 });
 
