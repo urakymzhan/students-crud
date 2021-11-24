@@ -1,0 +1,12 @@
+{{!-- handle error properly --}}
+
+<h2>Update details for student and submit</h2>
+<form action="{{student.id}}?_method=PUT" method="post">
+    <input type="text" name="name" placeholder="Name" value="{{student.name}}">
+    <input type="number" name="age" placeholder="Age" value="{{student.age}}">
+    <input type="email" name="email" placeholder="Email" value="{{student.email}}">
+    <input type="text" name="profileImg" placeholder="Image Url" value="{{student.profileImg}}">
+    <button type='submit'>Submit</button>
+</form>
+<br>
+<a href="http://localhost:5000/api/v1/students">Cancel</a>

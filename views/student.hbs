@@ -1,0 +1,16 @@
+{{!-- handle error properly --}}
+
+<div>
+    <a href="http://localhost:5000/api/v1/students">All Students List</a>
+</div>
+<div class="student-card">
+    <div>
+        <img src="{{student.profileImg}}" />
+    </div>
+    <h3>{{student.name}}</h3>
+    <p>{{student.email}}</p>
+    <p>Age: {{student.age}}</p>
+    <form action="edit/{{student.id}}" method="get">
+        <button type="submit" class="btn btn-edit">Edit Info</button>    
+    </form>
+</div>

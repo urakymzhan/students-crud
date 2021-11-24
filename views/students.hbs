@@ -1,0 +1,38 @@
+{{!-- handle error properly --}}
+
+<div>
+    <a href="/">Navigate to Home Page</a>
+</div>
+<br>
+<table class="student">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Profile Image</th>
+        <th>Action</th>
+    </tr>
+    {{#each students}}
+        <tr>
+            <td>
+                <form action="students/{{this.id}}" method="get">
+                    <button type="submit" class="btn btn-name">{{this.name}}</button>    
+                </form>
+            </td>
+            <td>{{this.age}}</td>
+            <td>{{this.email}}</td>
+            <td><img src="{{this.profileImg}}" /></td>
+            <td>
+                <form action="students/delete/{{this.id}}?_method=DELETE" method="post">
+                    <button type="submit" class="btn btn-delete">Delete</button>    
+                </form>
+            </td>
+        </tr>
+    {{/each}}
+</table>
+<br>
+<div>
+    <button class="btn btn-new">
+        <a href="http://localhost:5000/api/v1/students/new" style="text-decoration: none">Add New Student</a>
+    </button>
+</div>
